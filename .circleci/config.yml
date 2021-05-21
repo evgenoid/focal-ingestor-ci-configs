@@ -1,0 +1,11 @@
+version: 2.1
+
+orbs:
+  lambda-ingestor: evgenoid/aws-lambda-ingestor@1.0.0
+
+workflows:
+  version: 2.1
+  hello:
+    jobs:
+      - lambda-ingestor/hello
+
